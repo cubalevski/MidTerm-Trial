@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <link href="calculatorSheet.css" rel="stylesheet">
+        <script src="script.js"></script>
+
+    </head>
+
+
+      <body>
+
+        <img src="header.gif">
+        </img>
+
+
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+                <ul>
+                    <li><a href="site.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="calculator.html"><i class="fas fa-calculator"></i>Calculator</a></li>
+                </ul> 
+            </div>
+            <div class="main_content">
+                <h1>Calculator</h1>
+                <form name="form1"  action="/action_page.php" method="post" >
+                    <br>Mileage (km) : <input type="text" id="mileage" name="mileage" required/><br>
+                    <br>Average Fuel Consumpion in Litre per 100 Km: <input type="text" id="AverageFuel" required/><br>
+                    <br>Fuel Price per litre: <input type="text" id="FuelPrice" required/><br>
+                    <br>Additional cost: <input type="text" id="Additionalcost" required/><br>
+                    <br>Number of Passengers: <input type="text" id="Passengers" required/><br>
+
+
+
+                    
+                    <br> Agreement: <input type="checkbox" id="myCheck" onclick="myFunction()">
+
+                  <p id="text" style="display:none">Agreement is CHECKED!</p>
+
+
+
+                  <br><br><input type="button" onClick="calculate()" Value="Calculate" required/>
+                    </form>
+
+
+                    <br><p>The Result is : <br>
+                        <span id = "result"></span>
+                        </p>
+
+
+            </div>           
+        </div>
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+</html>
