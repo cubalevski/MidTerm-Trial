@@ -25,9 +25,9 @@
             </div>
             <div class="main_content">
                 <h1>Calculator</h1>
-                <form name="form1"  action="/action_page.php" method="post" >
-                    <br>Mileage (km) : <input type="text" id="mileage" name="mileage" required/><br>
-                    <br>Average Fuel Consumpion in Litre per 100 Km: <input type="text" id="AverageFuel" required/><br>
+                <form name="form1" >
+                    <br>Mileage (km) : <input type="text" id="mileage" name="Mileage" required/><br>
+                    <br>Average Fuel Consumpion in Litre per 100 Km: <input type="text" id="AverageFuel" name= "Fuel" required/><br>
                     <br>Fuel Price per litre: <input type="text" id="FuelPrice" required/><br>
                     <br>Additional cost: <input type="text" id="Additionalcost" required/><br>
                     <br>Number of Passengers: <input type="text" id="Passengers" required/><br>
@@ -35,13 +35,13 @@
 
 
                     
-                    <br> Agreement: <input type="checkbox" id="myCheck" onclick="myFunction()">
+                    <br> Agreement: <input type="checkbox" id="myCheck" onclick="myFunction()" required>
 
                   <p id="text" style="display:none">Agreement is CHECKED!</p>
 
 
 
-                  <br><br><input type="button" onClick="calculate()" Value="Calculate" required/>
+                  <br><br><input type="submit" onClick="calculate()" Value="Calculate"/>
                     </form>
 
 
