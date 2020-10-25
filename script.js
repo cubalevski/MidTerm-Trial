@@ -1,10 +1,4 @@
-function validateForm() {
-    var x = document.forms["form1"]["mileage"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
-  }
+
 
 function myFunction() {
     // Get the checkbox
@@ -28,6 +22,6 @@ function myFunction() {
         num4 = document.getElementById("Additionalcost").value;
         num5 = document.getElementById("Passengers").value;
         document.getElementById("result").innerHTML = ((((num1 / 100) * num2) * num3 + num4 ) / num5);
-        localStorage.setItem("result")
+        window.localStorage.setItem("result", "0");
 }
 
